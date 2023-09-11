@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="" class="logo" alt="">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a id="about-link" href="#">About</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Certification</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hi, I am <span>Joseph Bharath</span><br> From Nilgiris </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="about-section">
+      <div class="container">
+        <div class="about-left">
+          <img src="meRed.png" alt="Your Image">
+        </div>
+        <div class="about-right">
+          <h2>About</h2>
+          <p><br><br>
+            I am pursuing a degree in BE EEE, and my passion for web development led me to explore programming skills such as Python, HTML, CSS, JavaScript, Node.js, and MySQL. I've also gained intermediate proficiency in problem-solving with Java as well as in data structures and algorithms.<br><br>
+
+I have developed several mini-projects focused on creating reactive websites along this journey. Additionally, I've received certifications in these skills from platforms like Udemy, Coursera, Codecademy, and FreeCodeCamp. I'm committed to continuous learning and eagerly embrace new challenges and opportunities daily.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ... (remaining code) ... -->
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('#about-link').addEventListener('click', function(e) {
+          e.preventDefault();
+          const aboutSection = document.querySelector('#about');
+          window.scrollTo({
+            top: aboutSection.offsetTop,
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
